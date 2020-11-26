@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Survey form</h1>
+        <p>this is a example of survey form</p>
+      </header>
+
+      <form action="">
+        <div class="row">
+          <p>nombre</p>
+          <label for="nombre"></label>
+          <input
+            class="form-control"
+            type="text"
+            name="nombre"
+            placeholder="ingresa tu nombre"
+          />
+        </div>
+        <div class="row">
+          <p>email</p>
+          <label for="nombre"></label>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="ingresa tu email"
+          />
+        </div>
+        <div class="row">
+          <p>Age</p>
+          <label for="nombre"></label>
+          <input
+            type="number"
+            min="10"
+            max="90"
+            name="nombre"
+            placeholder="Selected age"
+          />
+        </div>
+        <div class="row">
+          <label for="nombre"></label>
+          <select class="form-control" name="role" id="">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <p>Recomentdarias freecodecamp a un amigo</p>
+          <label for="nombre"
+            >Definitivamente<input
+              class="radio"
+              type="radio"
+              name="nombre"
+              value="definitivamente"
+            />
+          </label>
+        </div>
+        <div class="row">
+          <label for="nombre"
+            >Quizas<input
+              class="radio"
+              type="radio"
+              name="nombre"
+              value="quizas"
+          /></label>
+        </div>
+        <div class="row">
+          <label for="nombre"
+            >Nop<input class="radio" type="radio" name="nombre" value="nop"
+          /></label>
+        </div>
+        <textarea name="" placeholder="enter your comment"></textarea>
+        <br />
+        <button class="row" type="submit">this</button>
+      </form>
+    </div>
+  </body>
+</html>
