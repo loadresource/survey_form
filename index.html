@@ -14,33 +14,30 @@
   <body>
     <div class="container">
       <header>
-        <h1>Survey form</h1>
-        <p>this is a example of survey form</p>
+        <h1 id="title">Survey form</h1>
+        <p id="description">this is a example of survey form</p>
       </header>
 
-      <form action="">
+      <form id="survey-form" action="#">
         <div class="row">
-          <p>nombre</p>
-          <label for="nombre"></label>
+          <p>name</p>
+          <label id="name-label" for="name"></label>
           <input
+            id="name"
             class="form-control"
             type="text"
-            name="nombre"
-            placeholder="ingresa tu nombre"
+            name="name"
+            placeholder="Enter name"
           />
         </div>
         <div class="row">
           <p>email</p>
-          <label for="nombre"></label>
-          <input
-            type="text"
-            name="nombre"
-            placeholder="ingresa tu email"
-          />
+          <label id="email-label" for="email"></label>
+          <input type="text" name="email" placeholder="Enter email" />
         </div>
         <div class="row">
           <p>Age</p>
-          <label for="nombre"></label>
+          <label id="number-label" for="nombre"></label>
           <input
             type="number"
             min="10"
@@ -51,7 +48,7 @@
         </div>
         <div class="row">
           <label for="nombre"></label>
-          <select class="form-control" name="role" id="">
+          <select class="form-control" name="role" id="dropdowm">
             <option disabled selected value>Select current role</option>
             <option value="student">Student</option>
             <option value="job">Full Time Job</option>
@@ -63,32 +60,28 @@
 
         <div class="row">
           <p>Recomentdarias freecodecamp a un amigo</p>
-          <label for="nombre"
-            >Definitivamente<input
+          <label for="yes, of course!"
+            >yes, of course!<input
               class="radio"
               type="radio"
-              name="nombre"
-              value="definitivamente"
+              name="yes, of course!"
+              value="yes, of course!"
             />
           </label>
         </div>
         <div class="row">
-          <label for="nombre"
-            >Quizas<input
-              class="radio"
-              type="radio"
-              name="nombre"
-              value="quizas"
+          <label for="Sure"
+            >Sure<input class="radio" type="radio" name="Sure" value="Sure"
           /></label>
         </div>
         <div class="row">
-          <label for="nombre"
-            >Nop<input class="radio" type="radio" name="nombre" value="nop"
+          <label for="nop"
+            >Nop<input class="radio" type="radio" name="nop" value="nop"
           /></label>
         </div>
         <textarea name="" placeholder="enter your comment"></textarea>
         <br />
-        <button class="row" type="submit">this</button>
+        <button class="row" id="submit" type="submit">submit</button>
       </form>
     </div>
   </body>

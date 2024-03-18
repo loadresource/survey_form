@@ -1,13 +1,22 @@
+::-webkit-input-placeholder {
+  color: black;
+}
 header {
   text-align: center;
 }
+header h1 {
+  font-size: 60px;
+}
+
 input[type="text"],
 select,
 textarea {
+  outline-style: none;
+  color: black;
+  background-color: rgba(243, 243, 243, 0.705);
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
 }
@@ -16,9 +25,12 @@ input[type="submit"] {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   float: right;
+}
+input[type="text"]:focus {
+  outline: none;
+  border-color: 5px rgb(174, 192, 247);
 }
 label {
   display: inline-block;
@@ -32,19 +44,23 @@ button {
 }
 button:hover {
   color: white;
-  background-color: purple
+  background-color: purple;
 }
-form p{
+form p {
   font-size: 23px;
   margin: 0;
-  padding: 0;;
+  padding: 0;
 }
 .container {
   box-shadow: 5px 5px 10px rgb(73, 73, 73);
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   border-radius: 5px;
-  background-color: #24263b;
+  background: linear-gradient(
+    to bottom right,
+    rgb(140, 0, 255),
+    rgb(255, 0, 34)
+  );
   padding: 20px;
 }
 
